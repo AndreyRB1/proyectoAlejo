@@ -38,6 +38,8 @@ body{
     backdrop-filter: brightness(40%);
     flex-direction: column;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
 
 }
@@ -67,7 +69,8 @@ textarea::placeholder{
 
 input, .input2{
     background: rgba(255, 255, 255, 0.3);
-    height: 40px;
+    height: 50px;
+    width: 50%;
     line-height: 40px;
     border-radius: 10px;
     padding: 0px 20px;
@@ -79,9 +82,11 @@ input, .input2{
 .input1{
     display: flex;
     flex-direction: row;
+    width: 96%;
     gap: 5px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .input2{
@@ -106,6 +111,7 @@ input, .input2{
 
 .checkbox{
     margin-top: 10px;
+    
 }
 
 
@@ -128,7 +134,7 @@ input, .input2{
 }
 
 .a2{
-    width: 100%;
+    width: 60%;
     font-size: 14px;
     
 }
@@ -160,10 +166,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     width: 60%;
-    margin-left: 75px;
 }
 
 .btnregistro{
