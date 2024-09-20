@@ -26,7 +26,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     overflow:hidden;   
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .registro form{
@@ -136,7 +138,9 @@ input, .input2{
 .a2{
     width: 60%;
     font-size: 14px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button{
@@ -178,3 +182,109 @@ button{
 }
 
 
+@media(max-width:1367px){
+
+  
+    h1{
+        margin-bottom: 20px;
+    }
+
+
+    input, .input2{
+        height: 40px;
+    }   
+
+    .input2{
+        height: 80%;
+        width: 87%;
+    }
+
+    .btn{
+        flex-direction: row;
+        gap:10%
+    }
+    
+    .a2{
+        padding-left: 20px;
+    }
+}
+
+@media(max-width:1024px){
+
+    .container{
+        align-items: center;
+        
+    }
+    
+    .registro form{
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    input, .input2{
+        height: 40px;
+    }   
+
+
+    .container .registro{
+        height: 90%;
+        width: 90%;
+    }
+    .registro form{
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .input1{
+        width: 92%;
+        height: 10%;
+        margin-bottom: 10px;
+    }
+
+    .input2{
+        height: 40%;
+        
+    }
+
+    .a2{
+        width: 30%;
+    }
+}
+
+@media(max-width:431px){
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    .container .registro{
+        height: 70%;
+        width: 90%;
+    }
+    .registro form{
+        width: 100%;
+        height: 100%;
+        
+    } 
+
+    input, .input2{
+        height: 40px;
+    }   
+
+    .input2{
+        height: 80%;
+        width: 87%;
+    }
+
+    .btn{
+        flex-direction: row;
+        gap:10%
+    }
+    
+    .a2{
+        padding-left: 20px;
+    }
+
+}
